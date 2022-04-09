@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PRA0004.Views.PagePrincial"
+             BackgroundImageSource="ihs.jpg"
+             NavigationPage.HasNavigationBar="False"
+              >
+   
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout  >
+                <Frame BackgroundColor="#2196F3" Padding="10" CornerRadius="0">
+                    <Label Text="Pagos" HorizontalTextAlignment="Center" TextColor="White" FontSize="24"/>
+                </Frame>
+                <Image Source="logoUCENM.png"
+                       Aspect="AspectFill"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       Margin="50,10,50,10"/>
+                
+                <ImageButton x:Name="btn_Pagos"
+                             Source="Mont.png"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center"
+                             Margin="100,5,100,0"
+                             Clicked="btn_Pagos_Clicked"/>
+                 
+
+            </StackLayout>
+        </ScrollView>
+        
+    </ContentPage.Content>
+</ContentPage>

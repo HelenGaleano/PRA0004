@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PRA0004.Views.PagePagos"
+             BackgroundImageSource="ihs.jpg"
+             Title="Atras">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout >
+                <Image x:Name="PhotoRecibo" BackgroundColor="#FFFDF5E6"
+                     WidthRequest="10" HeightRequest="200"
+                       Margin="50,15,50,15"/>
+
+                <Button x:Name="btnPhotorecibo" Text="Photo Monto"
+                        Clicked="btnPhotorecibo_Clicked"
+                        BackgroundColor="Gainsboro"
+                        BorderColor="Black"
+                        Margin="60,5,60,5"
+                        />
+
+                <Label Text="Descripcion"
+                       HorizontalOptions="Start"
+                       FontSize="20"
+                       TextColor="Black"
+                       Margin="30,0,10,0"/>
+                <Entry Keyboard="Text"
+                       Placeholder="Descripcion"
+                       Margin="30,0,30,0"
+                       x:Name="descripcion"
+                       BackgroundColor="MistyRose"/>
+                
+                <Label Text="Monto"
+                       HorizontalOptions="Start"
+                       FontSize="20"
+                       TextColor="Black"
+                       Margin="30,0,10,0"/>
+                <Entry Keyboard="Numeric"
+                       Placeholder="monto de pago"
+                       Margin="30,0,30,0"
+                       x:Name="montopago"
+                       BackgroundColor="MistyRose"/>
+
+                <Label Text="Fecha"
+                       HorizontalOptions="Start"
+                       FontSize="20"
+                       TextColor="Black"
+                       Margin="30,0,10,0"/>
+                <DatePicker Format="dd/MM/yyyy"
+                            x:Name="fecha"
+                            Margin="30,0,30,0" 
+                            BackgroundColor="MistyRose"/>
+                
+                <Button Text="AGREGAR" Font="large" BorderWidth="1" x:Name="btninsertar"
+                        Clicked="btninsertar_Clicked" BorderColor="Black"
+                        VerticalOptions="CenterAndExpand"
+                        Margin="50,20,50,20"/>
+                
+
+            </StackLayout>
+        </ScrollView>
+        
+    </ContentPage.Content>
+</ContentPage>
